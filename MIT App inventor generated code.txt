@@ -1,0 +1,312 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+
+  <block type="controls_if" id="QDJ4shtg`Vwz5}ZAbD~f" x="151" y="-140"></block>
+
+  <block type="component_event" id="2xdC/~NfD83YA_HR/1DF" x="-81" y="-59">
+
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+
+    <field name="COMPONENT_SELECTOR">Button1</field>
+
+    <statement name="DO">
+
+      <block type="component_set_get" id="qjacu8F`/F$csUX*5APY">
+
+        <mutation component_type="ProximitySensor" set_or_get="set" property_name="Enabled" is_generic="false" instance_name="ProximitySensor1"></mutation>
+
+        <field name="COMPONENT_SELECTOR">ProximitySensor1</field>
+
+        <field name="PROP">Enabled</field>
+
+        <value name="VALUE">
+
+          <block type="logic_boolean" id="GgT4IxE]z3.[[?i`YKm|">
+
+            <field name="BOOL">TRUE</field>
+
+          </block>
+
+        </value>
+
+        <next>
+
+          <block type="controls_openAnotherScreen" id="N%}x}10%#M0py}~QfXVe" collapsed="true">
+
+            <value name="SCREEN">
+
+              <block type="text" id="?ztz`k5X5zH1?)|Sff^p">
+
+                <field name="TEXT">Screen2</field>
+
+              </block>
+
+            </value>
+
+          </block>
+
+        </next>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <yacodeblocks ya-version="206" language-version="31"></yacodeblocks>
+
+</xml>
+
+#|
+
+$JSON
+
+{"authURL":["ai2.appinventor.mit.edu"],"YaVersion":"206","Source":"Form","Properties":{"$Name":"Screen1","$Type":"Form","$Version":"27","AlignHorizontal":"3","AlignVertical":"3","AppName":"mini_project","BackgroundColor":"&H00FFFFFF","BackgroundImage":"images(2).jpg","Uuid":"0","$Components":[{"$Name":"Button1","$Type":"Button","$Version":"6","Text":"NEXT","Uuid":"183091287"},{"$Name":"Clock1","$Type":"Clock","$Version":"4","TimerInterval":"3000","Uuid":"-902711481"},{"$Name":"Clock2","$Type":"Clock","$Version":"4","TimerAlwaysFires":"False","Uuid":"1649494506"},{"$Name":"ProximitySensor1","$Type":"ProximitySensor","$Version":"1","Uuid":"1750087520"}]}}
+
+|#
+
+<xml xmlns="http://www.w3.org/1999/xhtml">
+
+  <block type="component_event" id="B59li;K-7Q[m3kxr3P/l" x="-508" y="-157">
+
+    <mutation component_type="Button" is_generic="false" instance_name="Button1" event_name="Click"></mutation>
+
+    <field name="COMPONENT_SELECTOR">Button1</field>
+
+    <statement name="DO">
+
+      <block type="controls_openAnotherScreen" id="I:feU.lMUlr/6yB00QD]">
+
+        <value name="SCREEN">
+
+          <block type="text" id="BzKa;,DCbq_(v5o32p^w">
+
+            <field name="TEXT">Screen3</field>
+
+          </block>
+
+        </value>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <block type="component_event" id="D~_@cS7z?=/#l%_]M@pH" x="-507" y="-87">
+
+    <mutation component_type="Button" is_generic="false" instance_name="Button2" event_name="Click"></mutation>
+
+    <field name="COMPONENT_SELECTOR">Button2</field>
+
+    <statement name="DO">
+
+      <block type="controls_openAnotherScreen" id="(Ca;Jg:!R)1gif=8APd`">
+
+        <value name="SCREEN">
+
+          <block type="text" id="Zh!BMWHA{9%DdVElrkmk">
+
+            <field name="TEXT">Screen4</field>
+
+          </block>
+
+        </value>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <block type="component_event" id="DT)%h_VhjUP+TY!b6LR/" x="-503" y="-16">
+
+    <mutation component_type="Button" is_generic="false" instance_name="Button3" event_name="Click"></mutation>
+
+    <field name="COMPONENT_SELECTOR">Button3</field>
+
+    <statement name="DO">
+
+      <block type="controls_openAnotherScreen" id="#]?`Mg.h,$*B@3|~4H;?">
+
+        <value name="SCREEN">
+
+          <block type="text" id="~WR;WI~bgc%`q?I3ZyVT">
+
+            <field name="TEXT">Screen5</field>
+
+          </block>
+
+        </value>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <block type="component_event" id="2,:x7SPG!U|s)ImX/%/N" x="-498" y="52">
+
+    <mutation component_type="Button" is_generic="false" instance_name="Button4" event_name="Click"></mutation>
+
+    <field name="COMPONENT_SELECTOR">Button4</field>
+
+    <statement name="DO">
+
+      <block type="controls_openAnotherScreen" id="!a:DKypmemHOceRW?5uN">
+
+        <value name="SCREEN">
+
+          <block type="text" id="z46Eb`g/:Y:zRHj?wIcZ">
+
+            <field name="TEXT">Screen6</field>
+
+          </block>
+
+        </value>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <block type="component_event" id="qxapZ[,*qgaM!);#FmC?" x="-105" y="88">
+
+    <mutation component_type="ProximitySensor" is_generic="false" instance_name="ProximitySensor1" event_name="ProximityChanged"></mutation>
+
+    <field name="COMPONENT_SELECTOR">ProximitySensor1</field>
+
+    <statement name="DO">
+
+      <block type="controls_if" id="HAtYsK;@}Db9z!yuCh]%">
+
+        <mutation else="1"></mutation>
+
+        <value name="IF0">
+
+          <block type="math_compare" id="6ioRV[][PpqSD+PVVM-9">
+
+            <field name="OP">LT</field>
+
+            <value name="A">
+
+              <block type="lexical_variable_get" id=":MarsqDO^#Yt)BUKoZLh">
+
+                <mutation>
+
+                  <eventparam name="distance"></eventparam>
+
+                </mutation>
+
+                <field name="VAR">distance</field>
+
+              </block>
+
+            </value>
+
+            <value name="B">
+
+              <block type="math_number" id="}b^b~2Ea.z+}8Y_Zymuw">
+
+                <field name="NUM">5</field>
+
+              </block>
+
+            </value>
+
+          </block>
+
+        </value>
+
+        <statement name="DO0">
+
+          <block type="component_method" id="ln.v]PO(883pA,zc7Y}9">
+
+            <mutation component_type="Sound" method_name="Play" is_generic="false" instance_name="Sound1"></mutation>
+
+            <field name="COMPONENT_SELECTOR">Sound1</field>
+
+            <next>
+
+              <block type="component_method" id="~=~_eG#g3w;~hz9dQIEm">
+
+                <mutation component_type="Notifier" method_name="LogWarning" is_generic="false" instance_name="Notifier1"></mutation>
+
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+
+                <value name="ARG0">
+
+                  <block type="text" id="E);R6#U*1AQ+*V9|g;lW">
+
+                    <field name="TEXT">maintain social distance and clean your hands</field>
+
+                  </block>
+
+                </value>
+
+              </block>
+
+            </next>
+
+          </block>
+
+        </statement>
+
+        <statement name="ELSE">
+
+          <block type="component_method" id=";y)_=TLp-ug9v~6~V)GY">
+
+            <mutation component_type="Sound" method_name="Stop" is_generic="false" instance_name="Sound1"></mutation>
+
+            <field name="COMPONENT_SELECTOR">Sound1</field>
+
+          </block>
+
+        </statement>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <block type="component_event" id="Im:(3::6nnC%(v$ZTUb6" x="-510" y="309">
+
+    <mutation component_type="Clock" is_generic="false" instance_name="Clock1" event_name="Timer"></mutation>
+
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+
+    <statement name="DO">
+
+      <block type="component_method" id="1tA[xU%Dw!s2yAVg|x3{">
+
+        <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+
+        <field name="COMPONENT_SELECTOR">Notifier1</field>
+
+        <value name="ARG0">
+
+          <block type="text" id=";Pne6eg]1$lhqAOu*m4#">
+
+            <field name="TEXT">wash your hands</field>
+
+          </block>
+
+        </value>
+
+      </block>
+
+    </statement>
+
+  </block>
+
+  <block type="text" id="nZ]0BfW|OpLw//?kn+9a" x="-54" y="580">
+
+    <field name="TEXT">stay safe</field>
+
+  </block>
+
+  <yacodeblocks ya-version="206" language-version="31"></yacodeblocks>
+
+</xml>
+
